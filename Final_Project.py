@@ -1,5 +1,4 @@
 
-# This dictionary stores the rafting reservations.
 reservations = {
     "Sawyer Cullen": {
         "date": "2026-07-10",
@@ -18,8 +17,6 @@ reservations = {
     }
 }
 
-
-# This function displays the menu options.
 def show_menu():
     print("\nMontana River Adventures")
     print("1. View reservations")
@@ -31,7 +28,6 @@ def show_menu():
     print("7. Save and exit")
 
 
-# This function displays every reservation and its details.
 def view_reservations():
     print("\nRafting Reservations")
 
@@ -42,8 +38,6 @@ def view_reservations():
         print("Trip:", details["trip"])
         print()
 
-
-# This function adds a new reservation or updates an existing one.
 def add_reservation():
     name = input("Enter customer name: ").strip()
 
@@ -80,8 +74,6 @@ def add_reservation():
 
     print("Reservation saved!")
 
-
-# This function runs the menu until the user chooses to exit.
 def main():
     while True:
         show_menu()
@@ -99,6 +91,4 @@ def main():
         else:
             print("Invalid choice. Please choose 1-7.")
 
-
-# This starts the program.
 main()
